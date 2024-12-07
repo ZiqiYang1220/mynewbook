@@ -1,0 +1,1705 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>GDP growth rate and Inflation rate in EU &#8212; Book of Ziqi</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'project_2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="project_3.html" />
+    <link rel="prev" title="Using pandas" href="project_1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Book of Ziqi - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Book of Ziqi - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Welcome to Ziqi’s Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_1.html">Using pandas</a></li>
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Project 2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fproject_2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/project_2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>GDP growth rate and Inflation rate in EU</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#it-is-generally-thought-that-inflation-and-gdp-growth-are-positively-related-when-an-economy-grows-quickly-it-usually-means-there-is-more-production-more-jobs-and-more-consumption-as-the-demand-for-goods-and-services-increases-faster-than-the-supply-prices-go-up-causing-inflation-another-way-to-look-at-it-is-that-inflation-happens-because-more-money-is-added-to-the-economy-to-keep-up-with-the-growing-need-for-money-as-the-economy-expands">It is generally thought that inflation and GDP growth are positively related. When an economy grows quickly, it usually means there is more production, more jobs, and more consumption. As the demand for goods and services increases faster than the supply, prices go up, causing inflation. Another way to look at it is that inflation happens because more money is added to the economy to keep up with the growing need for money as the economy expands.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-project-will-study-the-relationship-between-eu-gdp-growth-and-inflation-rate-between-2008-to-2019">This project will study the relationship between EU GDP growth and Inflation rate between 2008 to 2019.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#date-source">Date source:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-data-worldbank-org-indicator-ny-gdp-mktp-kd-zg-end-2023-locations-eu-start-1961-https-www-kaggle-com-datasets-hgultekin-hicp-inflation-rate-resource-download">https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2023&amp;locations=EU&amp;start=1961 https://www.kaggle.com/datasets/hgultekin/hicp-inflation-rate?resource=download</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#during-the-2008-financial-crisis-inflation-dropped-significantly-due-to-reduced-consumption-and-production-stagnation">During the 2008 financial crisis, inflation dropped significantly due to reduced consumption and production stagnation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caused-by-the-liquidity-crunch-over-the-years-gdp-growth-rate-and-inflation-rate-tend-to-converge-although-their">caused by the liquidity crunch. Over the years, GDP growth rate and inflation rate tend to converge, although their</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-is-not-always-linear-both-inflation-and-gdp-growth-are-complex-metric-influenced-by">relationship is not always linear. Both inflation and GDP growth are complex metric influenced by</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#central-bank-policies-and-political-events">central bank policies and political events.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#however-the-visualization-still-shows-a-general-trend-of-convergence-between-the-two">However, the visualization still shows a general trend of convergence between the two.</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="gdp-growth-rate-and-inflation-rate-in-eu">
+<h1>GDP growth rate and Inflation rate in EU<a class="headerlink" href="#gdp-growth-rate-and-inflation-rate-in-eu" title="Link to this heading">#</a></h1>
+<section id="it-is-generally-thought-that-inflation-and-gdp-growth-are-positively-related-when-an-economy-grows-quickly-it-usually-means-there-is-more-production-more-jobs-and-more-consumption-as-the-demand-for-goods-and-services-increases-faster-than-the-supply-prices-go-up-causing-inflation-another-way-to-look-at-it-is-that-inflation-happens-because-more-money-is-added-to-the-economy-to-keep-up-with-the-growing-need-for-money-as-the-economy-expands">
+<h2>It is generally thought that inflation and GDP growth are positively related. When an economy grows quickly, it usually means there is more production, more jobs, and more consumption. As the demand for goods and services increases faster than the supply, prices go up, causing inflation. Another way to look at it is that inflation happens because more money is added to the economy to keep up with the growing need for money as the economy expands.<a class="headerlink" href="#it-is-generally-thought-that-inflation-and-gdp-growth-are-positively-related-when-an-economy-grows-quickly-it-usually-means-there-is-more-production-more-jobs-and-more-consumption-as-the-demand-for-goods-and-services-increases-faster-than-the-supply-prices-go-up-causing-inflation-another-way-to-look-at-it-is-that-inflation-happens-because-more-money-is-added-to-the-economy-to-keep-up-with-the-growing-need-for-money-as-the-economy-expands" title="Link to this heading">#</a></h2>
+</section>
+<section id="this-project-will-study-the-relationship-between-eu-gdp-growth-and-inflation-rate-between-2008-to-2019">
+<h2>This project will study the relationship between EU GDP growth and Inflation rate between 2008 to 2019.<a class="headerlink" href="#this-project-will-study-the-relationship-between-eu-gdp-growth-and-inflation-rate-between-2008-to-2019" title="Link to this heading">#</a></h2>
+</section>
+<section id="date-source">
+<h2>Date source:<a class="headerlink" href="#date-source" title="Link to this heading">#</a></h2>
+</section>
+<section id="https-data-worldbank-org-indicator-ny-gdp-mktp-kd-zg-end-2023-locations-eu-start-1961-https-www-kaggle-com-datasets-hgultekin-hicp-inflation-rate-resource-download">
+<h2><a class="reference external" href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2023&amp;amp;locations=EU&amp;amp;start=1961">https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2023&amp;locations=EU&amp;start=1961</a> <a class="reference external" href="https://www.kaggle.com/datasets/hgultekin/hicp-inflation-rate?resource=download">https://www.kaggle.com/datasets/hgultekin/hicp-inflation-rate?resource=download</a><a class="headerlink" href="#https-data-worldbank-org-indicator-ny-gdp-mktp-kd-zg-end-2023-locations-eu-start-1961-https-www-kaggle-com-datasets-hgultekin-hicp-inflation-rate-resource-download" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Skip the meta data row</span>
+<span class="n">GDPdata</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;GDP Growth EU.csv&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">GDPdata</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>Indicator Name</th>
+      <th>Indicator Code</th>
+      <th>1960</th>
+      <th>1961</th>
+      <th>1962</th>
+      <th>1963</th>
+      <th>1964</th>
+      <th>1965</th>
+      <th>...</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+      <th>2021</th>
+      <th>2022</th>
+      <th>2023</th>
+      <th>Unnamed: 68</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Aruba</td>
+      <td>ABW</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>-0.623626</td>
+      <td>1.719625</td>
+      <td>7.048533</td>
+      <td>2.381730</td>
+      <td>-2.302836</td>
+      <td>-23.982581</td>
+      <td>27.639357</td>
+      <td>10.458317</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Africa Eastern and Southern</td>
+      <td>AFE</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>0.460106</td>
+      <td>7.868013</td>
+      <td>5.616400</td>
+      <td>4.668135</td>
+      <td>5.138990</td>
+      <td>...</td>
+      <td>3.011572</td>
+      <td>2.183581</td>
+      <td>2.651400</td>
+      <td>2.681718</td>
+      <td>2.189259</td>
+      <td>-2.780379</td>
+      <td>4.497380</td>
+      <td>3.554422</td>
+      <td>2.622310</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>1.451315</td>
+      <td>2.260314</td>
+      <td>2.647003</td>
+      <td>1.189228</td>
+      <td>3.911603</td>
+      <td>-2.351101</td>
+      <td>-20.738839</td>
+      <td>-6.240172</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Africa Western and Central</td>
+      <td>AFW</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>1.873455</td>
+      <td>3.707643</td>
+      <td>7.145784</td>
+      <td>5.406403</td>
+      <td>4.102491</td>
+      <td>...</td>
+      <td>2.813979</td>
+      <td>0.141489</td>
+      <td>2.284961</td>
+      <td>2.842645</td>
+      <td>3.222029</td>
+      <td>-1.004417</td>
+      <td>3.994854</td>
+      <td>3.784486</td>
+      <td>3.342776</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Angola</td>
+      <td>AGO</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.943572</td>
+      <td>-2.580111</td>
+      <td>-0.147150</td>
+      <td>-1.316362</td>
+      <td>-0.702273</td>
+      <td>-5.638215</td>
+      <td>1.199211</td>
+      <td>3.045403</td>
+      <td>0.856001</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>261</th>
+      <td>Kosovo</td>
+      <td>XKX</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>5.916231</td>
+      <td>5.571775</td>
+      <td>4.825656</td>
+      <td>3.406632</td>
+      <td>4.756801</td>
+      <td>-5.340275</td>
+      <td>10.745656</td>
+      <td>4.278499</td>
+      <td>3.337895</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>262</th>
+      <td>Yemen, Rep.</td>
+      <td>YEM</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>-27.994546</td>
+      <td>-9.375124</td>
+      <td>-5.071796</td>
+      <td>0.752448</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>263</th>
+      <td>South Africa</td>
+      <td>ZAF</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>3.844734</td>
+      <td>6.177931</td>
+      <td>7.373709</td>
+      <td>7.939609</td>
+      <td>6.122798</td>
+      <td>...</td>
+      <td>1.321862</td>
+      <td>0.664552</td>
+      <td>1.157947</td>
+      <td>1.556784</td>
+      <td>0.259936</td>
+      <td>-5.963358</td>
+      <td>4.703062</td>
+      <td>1.910406</td>
+      <td>0.601662</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>264</th>
+      <td>Zambia</td>
+      <td>ZMB</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>1.361382</td>
+      <td>-2.490839</td>
+      <td>3.272393</td>
+      <td>12.214048</td>
+      <td>16.647456</td>
+      <td>...</td>
+      <td>2.920375</td>
+      <td>3.755100</td>
+      <td>3.525863</td>
+      <td>4.034494</td>
+      <td>1.441306</td>
+      <td>-2.785055</td>
+      <td>6.234922</td>
+      <td>5.249622</td>
+      <td>5.832474</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>265</th>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>GDP growth (annual %)</td>
+      <td>NY.GDP.MKTP.KD.ZG</td>
+      <td>NaN</td>
+      <td>6.316157</td>
+      <td>1.434471</td>
+      <td>6.244345</td>
+      <td>-1.106172</td>
+      <td>4.910571</td>
+      <td>...</td>
+      <td>2.023650</td>
+      <td>0.900955</td>
+      <td>4.080264</td>
+      <td>5.009867</td>
+      <td>-6.332446</td>
+      <td>-7.816951</td>
+      <td>8.468017</td>
+      <td>6.522375</td>
+      <td>4.955782</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>266 rows × 69 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter for the row &quot;EEU&quot; (European Union)</span>
+<span class="n">eu_data</span> <span class="o">=</span> <span class="n">GDPdata</span><span class="p">[</span><span class="n">GDPdata</span><span class="p">[</span><span class="s2">&quot;Country Code&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;EUU&quot;</span><span class="p">]</span>
+
+<span class="c1"># Filter the data so that it only contain figures from 2008 to 2019</span>
+<span class="n">eu_data_filtered</span> <span class="o">=</span> <span class="n">eu_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Country Code&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">2020</span><span class="p">)]]</span>
+
+
+<span class="n">eu_data_filtered</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>73</th>
+      <td>European Union</td>
+      <td>EUU</td>
+      <td>0.64126</td>
+      <td>-4.3487</td>
+      <td>2.225118</td>
+      <td>1.900957</td>
+      <td>-0.701866</td>
+      <td>-0.082642</td>
+      <td>1.600653</td>
+      <td>2.309378</td>
+      <td>1.972308</td>
+      <td>2.844765</td>
+      <td>2.066902</td>
+      <td>1.805312</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inflation</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Inflation_Eurostat.csv&#39;</span><span class="p">)</span>
+<span class="n">inflation</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geo</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>European Union (changing composition)</td>
+      <td>3.7</td>
+      <td>1.0</td>
+      <td>2.1</td>
+      <td>3.1</td>
+      <td>2.6</td>
+      <td>1.5</td>
+      <td>0.6</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>1.7</td>
+      <td>1.9</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>EU (27 countries - from 2020)</td>
+      <td>3.7</td>
+      <td>0.8</td>
+      <td>1.8</td>
+      <td>2.9</td>
+      <td>2.6</td>
+      <td>1.3</td>
+      <td>0.4</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>1.6</td>
+      <td>1.8</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>EU (28 countries)</td>
+      <td>3.7</td>
+      <td>1.0</td>
+      <td>2.1</td>
+      <td>3.1</td>
+      <td>2.6</td>
+      <td>1.5</td>
+      <td>0.6</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>1.7</td>
+      <td>1.9</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Euro area (changing composition)</td>
+      <td>3.3</td>
+      <td>0.3</td>
+      <td>1.6</td>
+      <td>2.7</td>
+      <td>2.5</td>
+      <td>1.4</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>1.5</td>
+      <td>1.8</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Euro area - 19 countries  (from 2015)</td>
+      <td>3.3</td>
+      <td>0.3</td>
+      <td>1.6</td>
+      <td>2.7</td>
+      <td>2.5</td>
+      <td>1.3</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>1.5</td>
+      <td>1.8</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Euro area - 18 countries (2014)</td>
+      <td>3.3</td>
+      <td>0.3</td>
+      <td>1.6</td>
+      <td>2.7</td>
+      <td>2.5</td>
+      <td>1.4</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>1.5</td>
+      <td>1.8</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Belgium</td>
+      <td>4.5</td>
+      <td>0.0</td>
+      <td>2.3</td>
+      <td>3.4</td>
+      <td>2.6</td>
+      <td>1.2</td>
+      <td>0.5</td>
+      <td>0.6</td>
+      <td>1.8</td>
+      <td>2.2</td>
+      <td>2.3</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Bulgaria</td>
+      <td>12.0</td>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>3.4</td>
+      <td>2.4</td>
+      <td>0.4</td>
+      <td>-1.6</td>
+      <td>-1.1</td>
+      <td>-1.3</td>
+      <td>1.2</td>
+      <td>2.6</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Czechia</td>
+      <td>6.3</td>
+      <td>0.6</td>
+      <td>1.2</td>
+      <td>2.2</td>
+      <td>3.5</td>
+      <td>1.4</td>
+      <td>0.4</td>
+      <td>0.3</td>
+      <td>0.6</td>
+      <td>2.4</td>
+      <td>2.0</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Denmark</td>
+      <td>3.6</td>
+      <td>1.0</td>
+      <td>2.2</td>
+      <td>2.7</td>
+      <td>2.4</td>
+      <td>0.5</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>1.1</td>
+      <td>0.7</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Germany</td>
+      <td>2.8</td>
+      <td>0.2</td>
+      <td>1.1</td>
+      <td>2.5</td>
+      <td>2.2</td>
+      <td>1.6</td>
+      <td>0.8</td>
+      <td>0.7</td>
+      <td>0.4</td>
+      <td>1.7</td>
+      <td>1.9</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Estonia</td>
+      <td>10.6</td>
+      <td>0.2</td>
+      <td>2.7</td>
+      <td>5.1</td>
+      <td>4.2</td>
+      <td>3.2</td>
+      <td>0.5</td>
+      <td>0.1</td>
+      <td>0.8</td>
+      <td>3.7</td>
+      <td>3.4</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Ireland</td>
+      <td>3.1</td>
+      <td>-1.7</td>
+      <td>-1.6</td>
+      <td>1.2</td>
+      <td>1.9</td>
+      <td>0.5</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>-0.2</td>
+      <td>0.3</td>
+      <td>0.7</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Greece</td>
+      <td>4.2</td>
+      <td>1.3</td>
+      <td>4.7</td>
+      <td>3.1</td>
+      <td>1.0</td>
+      <td>-0.9</td>
+      <td>-1.4</td>
+      <td>-1.1</td>
+      <td>0.0</td>
+      <td>1.1</td>
+      <td>0.8</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Spain</td>
+      <td>4.1</td>
+      <td>-0.2</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.4</td>
+      <td>1.5</td>
+      <td>-0.2</td>
+      <td>-0.6</td>
+      <td>-0.3</td>
+      <td>2.0</td>
+      <td>1.7</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>France</td>
+      <td>3.2</td>
+      <td>0.1</td>
+      <td>1.7</td>
+      <td>2.3</td>
+      <td>2.2</td>
+      <td>1.0</td>
+      <td>0.6</td>
+      <td>0.1</td>
+      <td>0.3</td>
+      <td>1.2</td>
+      <td>2.1</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Croatia</td>
+      <td>5.8</td>
+      <td>2.2</td>
+      <td>1.1</td>
+      <td>2.2</td>
+      <td>3.4</td>
+      <td>2.3</td>
+      <td>0.2</td>
+      <td>-0.3</td>
+      <td>-0.6</td>
+      <td>1.3</td>
+      <td>1.6</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Italy</td>
+      <td>3.5</td>
+      <td>0.8</td>
+      <td>1.6</td>
+      <td>2.9</td>
+      <td>3.3</td>
+      <td>1.2</td>
+      <td>0.2</td>
+      <td>0.1</td>
+      <td>-0.1</td>
+      <td>1.3</td>
+      <td>1.2</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Cyprus</td>
+      <td>4.4</td>
+      <td>0.2</td>
+      <td>2.6</td>
+      <td>3.5</td>
+      <td>3.1</td>
+      <td>0.4</td>
+      <td>-0.3</td>
+      <td>-1.5</td>
+      <td>-1.2</td>
+      <td>0.7</td>
+      <td>0.8</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Latvia</td>
+      <td>15.3</td>
+      <td>3.3</td>
+      <td>-1.2</td>
+      <td>4.2</td>
+      <td>2.3</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.2</td>
+      <td>0.1</td>
+      <td>2.9</td>
+      <td>2.6</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Lithuania</td>
+      <td>11.1</td>
+      <td>4.2</td>
+      <td>1.2</td>
+      <td>4.1</td>
+      <td>3.2</td>
+      <td>1.2</td>
+      <td>0.2</td>
+      <td>-0.7</td>
+      <td>0.7</td>
+      <td>3.7</td>
+      <td>2.5</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Luxembourg</td>
+      <td>4.1</td>
+      <td>0.0</td>
+      <td>2.8</td>
+      <td>3.7</td>
+      <td>2.9</td>
+      <td>1.7</td>
+      <td>0.7</td>
+      <td>0.1</td>
+      <td>0.0</td>
+      <td>2.1</td>
+      <td>2.0</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Hungary</td>
+      <td>6.0</td>
+      <td>4.0</td>
+      <td>4.7</td>
+      <td>3.9</td>
+      <td>5.7</td>
+      <td>1.7</td>
+      <td>0.0</td>
+      <td>0.1</td>
+      <td>0.4</td>
+      <td>2.4</td>
+      <td>2.9</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Malta</td>
+      <td>4.7</td>
+      <td>1.8</td>
+      <td>2.0</td>
+      <td>2.5</td>
+      <td>3.2</td>
+      <td>1.0</td>
+      <td>0.8</td>
+      <td>1.2</td>
+      <td>0.9</td>
+      <td>1.3</td>
+      <td>1.7</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Netherlands</td>
+      <td>2.2</td>
+      <td>1.0</td>
+      <td>0.9</td>
+      <td>2.5</td>
+      <td>2.8</td>
+      <td>2.6</td>
+      <td>0.3</td>
+      <td>0.2</td>
+      <td>0.1</td>
+      <td>1.3</td>
+      <td>1.6</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Austria</td>
+      <td>3.2</td>
+      <td>0.4</td>
+      <td>1.7</td>
+      <td>3.6</td>
+      <td>2.6</td>
+      <td>2.1</td>
+      <td>1.5</td>
+      <td>0.8</td>
+      <td>1.0</td>
+      <td>2.2</td>
+      <td>2.1</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Poland</td>
+      <td>4.2</td>
+      <td>4.0</td>
+      <td>2.6</td>
+      <td>3.9</td>
+      <td>3.7</td>
+      <td>0.8</td>
+      <td>0.1</td>
+      <td>-0.7</td>
+      <td>-0.2</td>
+      <td>1.6</td>
+      <td>1.2</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Portugal</td>
+      <td>2.7</td>
+      <td>-0.9</td>
+      <td>1.4</td>
+      <td>3.6</td>
+      <td>2.8</td>
+      <td>0.4</td>
+      <td>-0.2</td>
+      <td>0.5</td>
+      <td>0.6</td>
+      <td>1.6</td>
+      <td>1.2</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Romania</td>
+      <td>7.9</td>
+      <td>5.6</td>
+      <td>6.1</td>
+      <td>5.8</td>
+      <td>3.4</td>
+      <td>3.2</td>
+      <td>1.4</td>
+      <td>-0.4</td>
+      <td>-1.1</td>
+      <td>1.1</td>
+      <td>4.1</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Slovenia</td>
+      <td>5.5</td>
+      <td>0.8</td>
+      <td>2.1</td>
+      <td>2.1</td>
+      <td>2.8</td>
+      <td>1.9</td>
+      <td>0.4</td>
+      <td>-0.8</td>
+      <td>-0.2</td>
+      <td>1.6</td>
+      <td>1.9</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Slovakia</td>
+      <td>3.9</td>
+      <td>0.9</td>
+      <td>0.7</td>
+      <td>4.1</td>
+      <td>3.7</td>
+      <td>1.5</td>
+      <td>-0.1</td>
+      <td>-0.3</td>
+      <td>-0.5</td>
+      <td>1.4</td>
+      <td>2.5</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Finland</td>
+      <td>3.9</td>
+      <td>1.6</td>
+      <td>1.7</td>
+      <td>3.3</td>
+      <td>3.2</td>
+      <td>2.2</td>
+      <td>1.2</td>
+      <td>-0.2</td>
+      <td>0.4</td>
+      <td>0.8</td>
+      <td>1.2</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Sweden</td>
+      <td>3.3</td>
+      <td>1.9</td>
+      <td>1.9</td>
+      <td>1.4</td>
+      <td>0.9</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.7</td>
+      <td>1.1</td>
+      <td>1.9</td>
+      <td>2.0</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>United Kingdom</td>
+      <td>3.6</td>
+      <td>2.2</td>
+      <td>3.3</td>
+      <td>4.5</td>
+      <td>2.8</td>
+      <td>2.6</td>
+      <td>1.5</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>2.7</td>
+      <td>2.5</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Iceland</td>
+      <td>12.8</td>
+      <td>16.3</td>
+      <td>7.5</td>
+      <td>4.2</td>
+      <td>6.0</td>
+      <td>4.1</td>
+      <td>1.0</td>
+      <td>0.3</td>
+      <td>0.8</td>
+      <td>-1.7</td>
+      <td>0.7</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Norway</td>
+      <td>3.4</td>
+      <td>2.3</td>
+      <td>2.3</td>
+      <td>1.3</td>
+      <td>0.4</td>
+      <td>2.0</td>
+      <td>1.9</td>
+      <td>2.0</td>
+      <td>3.9</td>
+      <td>1.9</td>
+      <td>3.0</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Switzerland</td>
+      <td>2.4</td>
+      <td>-0.7</td>
+      <td>0.6</td>
+      <td>0.1</td>
+      <td>-0.7</td>
+      <td>0.1</td>
+      <td>0.0</td>
+      <td>-0.8</td>
+      <td>-0.5</td>
+      <td>0.6</td>
+      <td>0.9</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>North Macedonia</td>
+      <td>7.6</td>
+      <td>-0.1</td>
+      <td>1.1</td>
+      <td>3.2</td>
+      <td>1.8</td>
+      <td>2.7</td>
+      <td>0.0</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>2.1</td>
+      <td>2.3</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Serbia</td>
+      <td>11.9</td>
+      <td>8.2</td>
+      <td>6.2</td>
+      <td>11.2</td>
+      <td>7.4</td>
+      <td>7.7</td>
+      <td>2.3</td>
+      <td>1.5</td>
+      <td>1.3</td>
+      <td>3.3</td>
+      <td>2.0</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Turkey</td>
+      <td>10.4</td>
+      <td>6.3</td>
+      <td>8.6</td>
+      <td>6.5</td>
+      <td>9.0</td>
+      <td>7.5</td>
+      <td>8.9</td>
+      <td>7.7</td>
+      <td>7.7</td>
+      <td>11.1</td>
+      <td>16.3</td>
+      <td>15.2</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>United States</td>
+      <td>4.4</td>
+      <td>-0.8</td>
+      <td>2.6</td>
+      <td>3.9</td>
+      <td>2.2</td>
+      <td>1.3</td>
+      <td>1.3</td>
+      <td>-0.8</td>
+      <td>0.5</td>
+      <td>1.7</td>
+      <td>2.2</td>
+      <td>1.3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Plot the graph</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">2020</span><span class="p">)]</span>
+
+<span class="c1"># Clean and extract inflation and GDP growth rate</span>
+<span class="n">gdp_rates</span> <span class="o">=</span> <span class="n">eu_data_filtered</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">years</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">inflation_eu</span> <span class="o">=</span> <span class="n">inflation</span><span class="p">[</span><span class="n">inflation</span><span class="p">[</span><span class="s2">&quot;geo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;European Union (changing composition)&quot;</span><span class="p">]</span>
+<span class="n">inflation_rates</span> <span class="o">=</span> <span class="n">inflation_eu</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">years</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Combine data set</span>
+<span class="n">data_combined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;Year&quot;</span><span class="p">:</span> <span class="n">years</span><span class="p">,</span>
+    <span class="s2">&quot;GDP Growth Rate(%)&quot;</span><span class="p">:</span> <span class="n">gdp_rates</span><span class="p">,</span>
+    <span class="s2">&quot;Inflation Rate(%)&quot;</span><span class="p">:</span> <span class="n">inflation_rates</span>
+<span class="p">})</span>
+
+<span class="c1"># Reshape the data and plot</span>
+<span class="n">data_melted</span> <span class="o">=</span> <span class="n">data_combined</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;Indicator&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;Percentage&quot;</span><span class="p">)</span>
+
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span>
+    <span class="n">data_melted</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Percentage&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;Indicator&quot;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;GDP Growth and Inflation(2008-2019) - EU&quot;</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Percentage&quot;</span><span class="p">:</span> <span class="s2">&quot;Percentage (%)&quot;</span><span class="p">,</span> <span class="s2">&quot;Year&quot;</span><span class="p">:</span> <span class="s2">&quot;Year&quot;</span><span class="p">},</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>                            <div id="250748b8-f5c4-430b-be51-def978ab44dd" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("250748b8-f5c4-430b-be51-def978ab44dd")) {                    Plotly.newPlot(                        "250748b8-f5c4-430b-be51-def978ab44dd",                        [{"hovertemplate":"Indicator=GDP Growth Rate(%)\u003cbr\u003eYear=%{x}\u003cbr\u003ePercentage (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"GDP Growth Rate(%)","line":{"color":"#636efa","dash":"solid"},"marker":{"symbol":"circle"},"mode":"lines","name":"GDP Growth Rate(%)","orientation":"v","showlegend":true,"x":["2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"],"xaxis":"x","y":[0.641259951664836,-4.34869986052647,2.22511838510061,1.9009568406489,-0.701866418422895,-0.082642393429694,1.60065250159793,2.30937774489288,1.97230777572166,2.84476536928575,2.06690196954229,1.80531197138112],"yaxis":"y","type":"scatter"},{"hovertemplate":"Indicator=Inflation Rate(%)\u003cbr\u003eYear=%{x}\u003cbr\u003ePercentage (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Inflation Rate(%)","line":{"color":"#EF553B","dash":"solid"},"marker":{"symbol":"circle"},"mode":"lines","name":"Inflation Rate(%)","orientation":"v","showlegend":true,"x":["2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"],"xaxis":"x","y":[3.7,1.0,2.1,3.1,2.6,1.5,0.6,0.1,0.2,1.7,1.9,1.5],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Year"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Percentage (%)"}},"legend":{"title":{"text":"Indicator"},"tracegroupgap":0},"title":{"text":"GDP Growth and Inflation(2008-2019) - EU"}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('250748b8-f5c4-430b-be51-def978ab44dd');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div></div></div>
+</div>
+<section id="during-the-2008-financial-crisis-inflation-dropped-significantly-due-to-reduced-consumption-and-production-stagnation">
+<h3>During the 2008 financial crisis, inflation dropped significantly due to reduced consumption and production stagnation<a class="headerlink" href="#during-the-2008-financial-crisis-inflation-dropped-significantly-due-to-reduced-consumption-and-production-stagnation" title="Link to this heading">#</a></h3>
+</section>
+<section id="caused-by-the-liquidity-crunch-over-the-years-gdp-growth-rate-and-inflation-rate-tend-to-converge-although-their">
+<h3>caused by the liquidity crunch. Over the years, GDP growth rate and inflation rate tend to converge, although their<a class="headerlink" href="#caused-by-the-liquidity-crunch-over-the-years-gdp-growth-rate-and-inflation-rate-tend-to-converge-although-their" title="Link to this heading">#</a></h3>
+</section>
+<section id="relationship-is-not-always-linear-both-inflation-and-gdp-growth-are-complex-metric-influenced-by">
+<h3>relationship is not always linear. Both inflation and GDP growth are complex metric influenced by<a class="headerlink" href="#relationship-is-not-always-linear-both-inflation-and-gdp-growth-are-complex-metric-influenced-by" title="Link to this heading">#</a></h3>
+</section>
+<section id="central-bank-policies-and-political-events">
+<h3>central bank policies and political events.<a class="headerlink" href="#central-bank-policies-and-political-events" title="Link to this heading">#</a></h3>
+</section>
+<section id="however-the-visualization-still-shows-a-general-trend-of-convergence-between-the-two">
+<h3>However, the visualization still shows a general trend of convergence between the two.<a class="headerlink" href="#however-the-visualization-still-shows-a-general-trend-of-convergence-between-the-two" title="Link to this heading">#</a></h3>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="project_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Using pandas</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="project_3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#it-is-generally-thought-that-inflation-and-gdp-growth-are-positively-related-when-an-economy-grows-quickly-it-usually-means-there-is-more-production-more-jobs-and-more-consumption-as-the-demand-for-goods-and-services-increases-faster-than-the-supply-prices-go-up-causing-inflation-another-way-to-look-at-it-is-that-inflation-happens-because-more-money-is-added-to-the-economy-to-keep-up-with-the-growing-need-for-money-as-the-economy-expands">It is generally thought that inflation and GDP growth are positively related. When an economy grows quickly, it usually means there is more production, more jobs, and more consumption. As the demand for goods and services increases faster than the supply, prices go up, causing inflation. Another way to look at it is that inflation happens because more money is added to the economy to keep up with the growing need for money as the economy expands.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-project-will-study-the-relationship-between-eu-gdp-growth-and-inflation-rate-between-2008-to-2019">This project will study the relationship between EU GDP growth and Inflation rate between 2008 to 2019.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#date-source">Date source:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-data-worldbank-org-indicator-ny-gdp-mktp-kd-zg-end-2023-locations-eu-start-1961-https-www-kaggle-com-datasets-hgultekin-hicp-inflation-rate-resource-download">https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2023&amp;locations=EU&amp;start=1961 https://www.kaggle.com/datasets/hgultekin/hicp-inflation-rate?resource=download</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#during-the-2008-financial-crisis-inflation-dropped-significantly-due-to-reduced-consumption-and-production-stagnation">During the 2008 financial crisis, inflation dropped significantly due to reduced consumption and production stagnation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caused-by-the-liquidity-crunch-over-the-years-gdp-growth-rate-and-inflation-rate-tend-to-converge-although-their">caused by the liquidity crunch. Over the years, GDP growth rate and inflation rate tend to converge, although their</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-is-not-always-linear-both-inflation-and-gdp-growth-are-complex-metric-influenced-by">relationship is not always linear. Both inflation and GDP growth are complex metric influenced by</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#central-bank-policies-and-political-events">central bank policies and political events.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#however-the-visualization-still-shows-a-general-trend-of-convergence-between-the-two">However, the visualization still shows a general trend of convergence between the two.</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ziqi Yang
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
